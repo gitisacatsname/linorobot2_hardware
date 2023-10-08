@@ -52,11 +52,11 @@ ROBOT ORIENTATION
 #define MOTOR_OPERATING_VOLTAGE 12          // motor's operating voltage (used to calculate max RPM)
 #define MOTOR_POWER_MAX_VOLTAGE 12          // max voltage of the motor's power source (used to calculate max RPM)
 #define MOTOR_POWER_MEASURED_VOLTAGE 12     // current voltage reading of the power connected to the motor (used for calibration)
-#define COUNTS_PER_REV1 1262              // wheel1 encoder's no of ticks per rev
+#define COUNTS_PER_REV1 1325              // wheel1 encoder's no of ticks per rev
 #define COUNTS_PER_REV2 1325              // wheel2 encoder's no of ticks per rev
-#define COUNTS_PER_REV3 1283              // wheel3 encoder's no of ticks per rev
-#define COUNTS_PER_REV4 1328              // wheel4 encoder's no of ticks per rev
-#define WHEEL_DIAMETER 0.047                // wheel's diameter in meters
+#define COUNTS_PER_REV3 1325              // wheel3 encoder's no of ticks per rev
+#define COUNTS_PER_REV4 1325              // wheel4 encoder's no of ticks per rev
+#define WHEEL_DIAMETER 0.048                // wheel's diameter in meters
 #define LR_WHEELS_DISTANCE 0.185            // distance between left and right wheels
 #define FR_WHEELS_DISTANCE 0.135   // distance between front and rear wheels. Ignore this if you're on 2WD/ACKERMANN
 #define PWM_BITS 8                          // PWM Resolution of the microcontroller
