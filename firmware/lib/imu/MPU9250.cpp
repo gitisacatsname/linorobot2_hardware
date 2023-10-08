@@ -77,7 +77,7 @@ bool MPU9250::testConnection() {
     if(device_id == 0x38 || device_id == 0x71 || device_id == 0x73)
         return true;
     else 
-        return true;
+        return false;
 }
 
 // AUX_VDDIO register (InvenSense demo code calls this RA_*G_OFFS_TC)
