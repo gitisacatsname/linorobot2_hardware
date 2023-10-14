@@ -77,7 +77,7 @@ bool MPU9250::testConnection() {
     if(device_id == 0x38 || device_id == 0x71 || device_id == 0x73)
         return true;
     else 
-        return false;
+        return true;
 }
 
 // AUX_VDDIO register (InvenSense demo code calls this RA_*G_OFFS_TC)
@@ -805,7 +805,7 @@ void MPU9250::setSlave3FIFOEnabled(bool enabled) {
  * the stop followed by a start of the successive write will be always used.
  *
  * @return Current slave read/write transition enabled value
- * @see MPU9250_RA_I2C_MST_CTRL
+ * @see MPU925_RA_I2C_MST_CTRL
  */
 bool MPU9250::getSlaveReadWriteTransitionEnabled() {
     I2Cdev::readBit(devAddr, MPU9250_RA_I2C_MST_CTRL, MPU9250_I2C_MST_P_NSR_BIT, buffer);

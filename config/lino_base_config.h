@@ -29,10 +29,10 @@
 // #define USE_ESC_MOTOR_DRIVER            // Motor ESC for brushless motors
 
 //uncomment the IMU you're using
-// define USE_GY85_IMU
+#define USE_GY85_IMU
 // #define USE_MPU6050_IMU
 // #define USE_MPU9150_IMU
-#define USE_MPU9250_IMU
+// #define USE_MPU9250_IMU
 
 #define K_P 0.6                             // P constant
 #define K_I 0.3                             // I constant
@@ -56,9 +56,9 @@ ROBOT ORIENTATION
 #define COUNTS_PER_REV2 1325              // wheel2 encoder's no of ticks per rev
 #define COUNTS_PER_REV3 1325              // wheel3 encoder's no of ticks per rev
 #define COUNTS_PER_REV4 1325              // wheel4 encoder's no of ticks per rev
-#define WHEEL_DIAMETER 0.048                // wheel's diameter in meters
-#define LR_WHEELS_DISTANCE 0.185            // distance between left and right wheels
-#define FR_WHEELS_DISTANCE 0.135   // distance between front and rear wheels. Ignore this if you're on 2WD/ACKERMANN
+#define WHEEL_DIAMETER 0.078                // wheel's diameter in meters
+#define LR_WHEELS_DISTANCE 0.18            // distance between left and right wheels
+#define FR_WHEELS_DISTANCE 0.132   // distance between front and rear wheels. Ignore this if you're on 2WD/ACKERMANN
 #define PWM_BITS 8                          // PWM Resolution of the microcontroller
 #define PWM_FREQUENCY 20000                 // PWM Frequency
 
